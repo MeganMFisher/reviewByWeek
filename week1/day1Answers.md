@@ -235,3 +235,34 @@ objFunc(obj)
 
 
 
+////////////////////////
+
+fork 
+
+//Essentially copies all the code from another person's repo and makes a new repo under your account with all their code.
+
+//This will essentially copy all of the code from this repository, but make it as a new repository under your account. As you can imagine, you can't push directly to the DevMountain repo, because that would not be secure for DevMountain (anyone could make any changes they want). What you should do is create a fork of this repo, then push to your own fork because it's under your own account.
+
+
+
+git clone [the url you copied]
+
+//Takes what's on a GitHub repository and essentially downloads it so you can now make changes to it on your local computer
+
+
+////MAKE CHANGES/////
+
+
+git add .   
+
+//Adds files to the 'staging area'. This is basically a fail safe if you accidentially add something you don't want. You can view items that our staged by running git status.
+
+
+git commit -m "The sentence I want associated with this commit message" 
+
+//This tells your computer: 'Hey, the next time code is pushed to GitHub, take all of this code with it.' The message also specifies what GitHub will display in relation to this commit.
+
+
+git push origin master
+
+//Your code is now pushed to GitHub. Be sure to include origin master, as this tells GitHub which branch you want to push to, and creates the branch if it doesn't exist yet.
