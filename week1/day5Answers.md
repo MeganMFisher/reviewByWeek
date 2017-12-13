@@ -174,3 +174,14 @@
 //**"Think of the virtual DOM as React's local and simplified copy of the HTML DOM. It allows React to do its computations within this abstract world and skip the 'real' DOM operations, often slow and browser-specific.
 
 //**"There's no big difference between the 'regular' DOM and the virtual DOM. This is why the JSX parts of the React code can look almost like pure HTML." 2
+
+
+If you use extends in your Component you must invoke super in your constructor. 
+
+option shift f. 
+
+In summary, here's what happens when you try to update the DOM in React:
+	.	The entire virtual DOM gets updated.
+	.	The virtual DOM gets compared to what it looked like before you updated it. React figures out which objects have changed.
+	.	The changed objects, and the changed objects only, get updated on the real DOM.
+	.	Changes on the real DOM cause the screen to change.
