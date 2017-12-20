@@ -87,3 +87,22 @@
 
 
 // How do you rename a column?
+
+
+
+// What does the Not null constraint do when creating a db table? 
+
+
+
+// How does the unique constraint work?
+
+
+
+// Example of when a unique constraint is important?
+
+
+
+// What is the check constraint?
+
+
+

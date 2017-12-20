@@ -82,12 +82,6 @@
     
     
     
-    
-//** Relationships: 
-  // -one to many relationship
-  // -parent to child relationship
-    
-    
 // What is a foreign key?
 
     //FOREIGN KEY: It is a key not from this table it is a key from another table therefore it is foreign and will reference another table. Often the primary key of the other table will be the reference to the second table as the foreign key. This takes planning and thinking ahead in your application. How you plan your database tables and their relationships between each other.
@@ -221,6 +215,69 @@
 
       // ALTER TABLE <table name>
       // RENAME TO <new column name>
+
+
+
+
+// What does the Not null constraint do when creating a db table? 
+
+    // A not-null constraint simply specifies that a column must not assume the null value
+
+
+
+// How does the unique constraint work?
+
+    //Unique constraints ensure that the data contained in a column, or a group of columns, is unique among all the rows in the table.
+
+    // Unique doesn't matter when it comes to null. 
+
+
+
+
+// Example of when a unique constraint is important?
+
+    // Login usernames.
+    // FB Login auth id
+    // email sometimes
+
+    // Any time you want to make sure there is not more than one in your db that is when unique comes in. 
+
+
+
+
+// What is the check constraint?
+
+    // A check constraint is the most generic constraint type. It allows you to specify that the value in a certain column must satisfy a Boolean (truth-value) expression.
+
+    For instance, to require positive product prices, you could use:
+
+    CREATE TABLE products (
+        product_no integer,
+        name text,
+        price numeric CHECK (price > 0)
+    );
+
+
+
+
+    
+//** Relationships: 
+  // -one to many relationship
+  // -one to one
+  // -many to many
+  // -parent to child relationship
+
+
+
+// What is a many to one type of relationship?
+
+    //
+
+
+
+
+
+
 
 
 
