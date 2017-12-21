@@ -106,3 +106,14 @@
 
 
 
+// What type of relationships are there?
+
+
+
+// What is an example of a many to one type of relationship?
+
+
+
+// What is an example of a many to many type of relationship?
+
+
