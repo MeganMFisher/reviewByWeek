@@ -478,9 +478,12 @@
 
 
 
+
 // What is the difference between and arrow function and a regular function when it comes to context?
 
     // With an arrow function the context of that function is determined wherever the function is declared which is different from a regular function which context is determined where the function is invoked. 
+
+    // The arrow function will look for it's parent's context.
 
 
 
