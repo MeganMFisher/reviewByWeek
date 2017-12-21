@@ -2,34 +2,27 @@
 
 // What can functions return?
 
-    // All the things including functions.
-
 
 
 // What is a closure?
 
-    // A function that returns another function.
 
-    //The inner function will then remember all the variables it had access to within the outer function even after the outer function has been invoked. 
 
-    // A function within another function.
 
-    // Takes a snapshot of its scope or lexical environment at the time it is invoked. 
+
+// Give an example of a closure?
+
 
 
 
 
 // What is the difference between ++num and num++?
 
-    // ++ before will increment the value and then return.
-
-    // ++ after will return the value then increment it.
-
-
 
 
 
 // Make the following code work:
+
     // let add = mathStuff(10)
     // add(10) // returns 20
 
@@ -44,18 +37,18 @@
 
 
 
-// MODULE PATTERN --- Allows us to use public and private methods & variables along with shielding parts of our code from the global scope.
-// Example: Private function invoked by the public one.
+// MODULE PATTERN
 
+// What is the module pattern?
+
+
+
+// Write an example of the module pattern?
 
 
 
 // Create a calculator using closures and the module pattern.
 
-
-
-
-// Create a bank account where you can add and remove funds.
 
 
 
@@ -68,6 +61,16 @@
 
 
 // What are 3 ways to determine context?
+
+
+
+
+// What is implicit context?
+
+
+
+
+// How do you use explicit context?
 
 
 
@@ -125,7 +128,7 @@
 
 //// CONSTRUCTOR FUNCTIONS 
 
-// Classes review. Syntactical sugar for days and days.
+// Write a basic class function?
 
 
 // A car object builder example as just a function.
@@ -146,11 +149,9 @@
       // The new object gets automatically returned, we don't need to use a return statement.
     }
 
-
-
-// Using the 'new' operator builds an new instance of an object (blueprint for object  contained in the function)
-// 'new' also sets the context for the 'this' keyword.
-// let mustang = new Car();
+    // Using the 'new' operator builds an new instance of an object (blueprint for object  contained in the function)
+    // 'new' also sets the context for the 'this' keyword.
+    // let mustang = new Car();
 
 
 
@@ -158,7 +159,6 @@
 // What happens when you don't use the 'new' keyword?
 
 
-// Classes help prevent this.
 
 
 //// PROTOTYPES 
@@ -173,13 +173,15 @@
 
 
 
-// What happens when you code a method as a property on the prototype?
+// Write an example of a prototype on an array that returns the first item in the array.
+
+
 
 
 
 //// ARROW FUNCTIONS
 
-// *** How do arrow functions handle 'this'?
+// How do arrow functions handle 'this'?
     
     // An arrow function's 'this' takes on the value of what 'this' would be in it’s surrounding scope at the time that it was created as opposed to the time that it was invoked like other functions (because of this, explicit binding will never work).
 
@@ -192,11 +194,13 @@
         return this
       }
     }
- 
-
-
 
 // What was the value?
+
+
+
+
+
 // Now paste this code in the console and invoke the method 'context':
  
       let arrow = {
@@ -235,37 +239,4 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// What is the difference between and arrow function and a regular function when it comes to context?
