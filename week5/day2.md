@@ -129,3 +129,68 @@
 
 
 // What does _.invert() do?
+
+
+
+// What are Collection functions in underscore?
+
+
+
+///// FUNCTIONAL PROGRAMMING 
+
+// What is functional programming?
+
+
+
+// What is a 'pure' function?
+
+
+
+// Why use functional programming?
+
+
+
+// How do you do functional programming?
+
+
+
+// Why treat data as immutable?
+
+
+
+
+
+//// DEBUGGING 
+
+// VS Code Debugger: How do you add a breakpoint?
+
+
+
+// When to use VS Code Debugger?
+
+
+
+// Why use a debugger?
+
+
+
+
+//// Chrome Developer Tools: 
+
+// Chrome Debugger: How to get started?
+
+
+
+// How to add a breakpoint?
+
+
+
+// What does the Network tab do?
+
+
+
+// What does the Application tab do?
+
+
+
+// What does the Audit tab do?

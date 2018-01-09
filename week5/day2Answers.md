@@ -30,6 +30,13 @@
     
     //Elimitates what takes us 4,5,6 lines of code to figure out what is happening in a block of code by starting with exactly what it is doing _.map, _.filter etc. 
 
+    // You are able to use a lot of methods on both arrays and objects (map on an object!!)
+
+    // Can deal with data easily in a just a few lines of code. 
+
+    // The methods you have access to are names very clearly to make your code even more readable. 
+
+
 
 
 
@@ -363,6 +370,140 @@ return {month: memo.month, price: (memo.price + num.price) }
 })
 
 console.log(totalByMonth)
+
+
+
+// What are Collection functions in underscore?
+
+    // Methods that are useable with arrays, objects and array like objects referred to as 'lists'.
   
+
+_.map(List, Iteratee callback Function(element, index, list))
+// Returns list
+
+
+_.each(List, Iteratee callback Function(element, index, list))
+// Returns list?
+
+_.reduce(List, Iteratee callback Function(element, index, list), Memo) 
+// Returns a single value
+
+
+
+
+
+///// FUNCTIONAL PROGRAMMING 
+
+// What is functional programming?
+
+    // A style of writing code. A programming paradigm. 
+
+    // Uses 'pure' functions.
+
+    // Does not share state or mutate state. 
+
+
+
+// What is a 'pure' function?
+
+    // A pure function is a function that only cares about it's inputs and only returns an output. It does not have side-effects meaning it doesn't affect any variable or state outside of itself. And it does not rely on anything outside of itself to run meaning it always will return the same results if invoked with the same arguments.
+
+
+
+// Why use functional programming?
+
+    // It is predictable. You will always be getting the same results. 
+
+    // It is testable. Because you don't share or mutate state and only rely on inputs, you should always have the same output which makes debugging and testing much smoother. 
+
+
+
+// How do you do functional programming?
+
+    // Use pure functions for everything. Example: instead of a for loop use .map(), .filter(), .reduce(). Basically quit your for loop habits.
+
+    // Avoid side effects. Only return values. 
+
+    // Treat your data as immutable. 
+
+    // Higher order functions, closures, callbacks, etc...
+
+    // Piecing together functions by using method chaining. let result = array.filter().map().reduce()
+
+
+
+// Why treat data as immutable?
+
+    // If someone else is using the same data and depending on it to be a certain way, you changing it can break all their things. You creating your own copy to change does not break their code. 
+
+
+
     
-    
+//// DEBUGGING 
+
+// VS Code Debugger: How do you add a breakpoint?
+
+    // Click and add a redd dot to the left of the line number.
+
+
+//** Step over button: You can step over a breakpoint and move on. 
+
+
+//** Step into button: You can step into that code and see every single thing that happens within that function.
+
+
+//** Step out button: It will remove itself so you no longer see all the portions of code it was evaluating. 
+
+
+// When to use VS Code Debugger?
+
+    // Debugging your server
+
+
+// Why use a debugger?
+
+    // Much more beneficial way to debug than console.logs and much more efficient. 
+
+
+
+//// Chrome Developer Tools: 
+
+//** Elements Tab: When you hover over elements on your page, Blue is element, Green is padding, Orange is margin. You can trial run changes to your css. 
+
+
+//** Sources Tab: Gives you all the sources from your application. You can see your files within this tab. 
+
+
+// Chrome Debugger: How to get started?
+
+    // Open your Chrome developer tools, go to 'Sources' tab. Click into the files on the left to find the one you are looking for and needing to debug. 
+
+
+// How to add a breakpoint?
+
+    // Click on the number of the line you want to add a breakpoint and a blue tag will appear. This is your breakpoint. 
+
+
+// What does the Network tab do?
+
+    // You can see all the requests made by the application and their status codes amongst other things. 
+
+    //Preserve log will keep your list even if you refresh the page. Without doing this it will not save all the previous requests. If you disable cache it will show you what its like to be a first time visitor to your app. 
+
+
+// What does the Application tab do?
+
+    // You can see any storage associated with this website. Example: cookies. 
+
+    // You can clear your cache and such here. 
+
+    // A service worker is a way to cache your site. It is great for production but not so much developement. If you go to clear storage and scroll to the bottom you can click 'clear site data'. Useful when getting weird issues. 
+
+    // You can see any registered service workers you have. 
+
+
+
+// What does the Audit tab do?
+
+    // It will audit your app and show you which ones you've passed or not. Progressive Web App, Preformance, Accessibility, and Best Practices. If you open the ones you've failed it will give you tips on how to pass it. Very useful information when making your app more efficient. 
+
