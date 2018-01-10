@@ -44,3 +44,64 @@
 // Why would each request need username/password?
 
        // HTTP is stateless. It has no recollection of previous requests. 
+
+
+
+// What is basic Authentication?
+
+    // Very simple way to enforce access controls for web resources. Credentials are sent in the header of the request. Credentials are encoded. 
+
+
+// What is encoding?
+
+    // Encoding transforms data into another format using publicly available schemes and is easily resersible. All you need to decode is the algorithm used to encode. Encoding is not for keeping things secret. The goal is to safetly transport it.  
+
+
+// What is encription?
+
+    // Transforms data with the goal of keeping the info secret. 
+
+
+// What is the best practice for storing passwords?
+
+    // Hash and salt them. If you are hashing passwords, you should also salt. 
+
+
+// What is hashing passwords?
+
+    // Hashed passwords become 'random' string of characters. Not intended to ever be un-hashed. Server stores hashed password, not original. Same input, same algorithm, same hash. 
+
+
+// What is passport?
+
+    // Simple, unobtrusive authentication for Node.js
+
+    // Authentication middleware for Node.js
+
+    // Passport has many different strategies that we can use. Some of those include FB, Google, etc...
+
+
+
+// Are HTTP requests stateless?
+
+    // HTTP requests are stateless. The server doesn't remember. 
+
+
+// What is auth0?
+
+    // A passport strategy. 
+
+
+
+// What do you need to install to use auth0? 
+
+    // npm i passport passport-auth0 express-session express
+
+
+
+// What three pieces of information do you need to get from auth0.com?
+
+    //Domain, Client ID, and Client Secret. 
+
+
+
